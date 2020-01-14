@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eddie's-Car</title>
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/c51b61aca4.js"></script>
+</head>
+<body>
+<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<h3>Бесплатная консультация</h3>
+			<input type="text" name="name" placeholder="Имя">
+			<input type="text" name="phone" placeholder="Телефон">
+			<input type="text" name="email" placeholder="Почта">
+			<button type="submit" class="popup__button">
+				Отправить
+			</button>
+			<div class='result'></div>
+			<div class="close-popup js-close-campaign"></div>
+		</div>
+</div>
+	<header id="main_page">
+		<div class="header_top_side">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+						<div class="header_logo">
+							<img src="img/лого.webp" alt="header_logo">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+						<div class="time_table md_none">
+							с 9.00 до 21.00<br>
+							   без выходных
+						</div>
+						<div class="header_button">
+							<input type="submit" value="Заказать звонок">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-3 col-sm-6 col-6">
+						<div class="header_contacts">
+							+7 (818) 247-47-25<br>
+							+7 (818) 247-48-28
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-6">
+						<div class="header_button md_none">
+							<input type="submit" value="Заказать звонок">
+						</div>
+						<div class="time_table adapt">
+							с 9.00 до 21.00<br>
+							   без выходных
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_bottom_side">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-8 col-12">
+						<div class="header_card">
+							<h2 class="header_card__title">
+							 Оригинальные<br>
+							 запчасти<br>
+							 для Белаз
+							</h2>
+							<h3 class="header_card__under_title">
+								с бесплатной доставкой<br>
+								в Ваш город!
+							</h3>
+							<div class="card_benefits">
+								<div class="card_benefits__image">
+									<img src="img/piggy-bank_icon.png" alt="piggy-bank">
+								</div>
+								<p class="card_benefits__text">
+									Дилерские цены - ниже на 20%,<br>
+									работаем без посредников!
+								</p>
+							</div>
+							<div class="card_benefits">
+								<div class="card_benefits__image">
+									<img src="img/delivery-truck_icon.png" alt="delivery-truck">	
+								</div>
+								<p class="card_benefits__text">
+									Срочная бесплатная доставка<br>
+									за 7 дней
+								</p>
+							</div>
+							<div class="card_benefits">
+								<div class="card_benefits__image">
+									<img src="img/calendar_icon.png" alt="calendar">
+								</div>
+								<p class="card_benefits__text">
+									Даем рассрочку<br>
+									6 месяцев 
+								</p>
+							</div>
+							<div class="card_benefits">
+								<div class="card_benefits__image">
+									<img src="img/medal_icon.png" alt="medal">
+								</div>
+								<p class="card_benefits__text">
+									Даем гарантию<br>
+									от 12 месяцев
+								</p>
+							</div>																					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="price">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+						<h2 class="price_title">
+						Получите прайс прямо сейчас<br>
+						на электронную почту!
+						</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="price_info">
+							<div class="price_info__inputs">
+								<input type="text" placeholder="Введите ваш e-mail">
+								<i class="far fa-envelope"></i>								
+							</div>
+						</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					    <div class="price_info aa">
+							<div class="price_info__inputs">
+								<input type="text" placeholder="Введите ваш телефон">
+								<i class="fas fa-phone-alt"></i>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="price_get">
+						<p class="price_get__text">Прайс придет к Вам на почту<br>
+                           в течение 5 минут!
+						</p>
+						<i class="far fa-clock"></i>
+					</div>	
+				</div>
+				<div class="col-12">
+					<div class="price_get">
+						<button type="button" class="price_get__button">Получить прайс</button>
+					</div>
+				</div>
+			</div>
+
+			</div>
+	</section>
+	<section class="first_additional">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="f_extra">
+						<h2 class="f_extra__title">Вам не придется ждать!</h2>
+						<p class="f_extra__text">
+							Любые запчасти для всех моделей Белаз<br>
+							всегда в наличии!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="extra_items">
+						<div class="extra_items__image">
+							<img src="img/engine.webp" alt="engine">
+						</div>
+						<p class="extra_items__text">
+							Любые типы деталей
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="extra_items">
+						<div class="extra_items__image">
+							<img src="img/dump-truck.webp" alt="dump-truck">
+						</div>
+						<p class="extra_items__text">
+							Все модификации Белаз
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="extra_items">
+						<div class="extra_items__image">
+							<img src="img/calendar_(5).webp" alt="calend">
+						</div>
+						<p class="extra_items__text">
+							Отгружаем в день заказа!
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="extra_items">
+						<div class="extra_items__image">
+							<img src="img/Forma_1.webp" alt="map">
+						</div>
+						<p class="extra_items__text">
+							Доставим в любое место!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="search">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="s_article">
+						<h2 class="s_article__title">Ищете конкретную деталь?</h2>
+						<p class="s_article__text">
+							Если у Вас есть артикул - введите его в поле ниже и получите цену<br>
+							ПРЯМО СЕЙЧАС!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12 col-12">
+					<div class="s_form s_end">
+						<input type="text" placeholder="Введите ваш артикул">
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-12 col-sm-12 col-12">	
+					<div class="s_form">
+						 <input type="text" placeholder="Введите ваш телефон">
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-12 col-sm-12 col-12">
+				    <div class="s_form s_start">
+				    	<button type="submit" class="s_form__button">Узнать цену</button>
+				    </div>	
+				</div>
+			</div>
+			<div class="row">	
+                 <div class="col-12">
+                 	<p class="search_under_title">
+						Мы перезвоним вам в течение 3 минут и назовем цену детали!<br>
+						Или Вы можете перезвонить нам сами:
+					</p>
+					<p class="search_phone_number">
+						 +7 (818) 247-47-25
+					</p>
+				
+                 </div>
+			</div>
+
+			
+		</div>
+	</section>
+	<section class="insurance">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="insurance_article">
+						<h2 class="insurance_article__title">
+							Мы гарантируем сохранность деталей<br>
+							во время перевозки!
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="insurance_items">
+						<div class="insurance_items__image">
+							<img src="img/doc_1.png" alt="doc">
+						</div>
+					<p class="insurance_items__text">
+						Гарантия на целостность поставки<br>
+						прописана в договоре
+					</p>
+					<a href="#" class="insurance_items__link">
+						Подробнее
+					</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="insurance_items">
+						<div class="insurance_items__image">
+							<img src="img/doc_2.png" alt="doc">
+						</div>
+					<p class="insurance_items__text">
+						Каждая запчасть доставляется с завода<br>
+						в жесткой упаковке
+					</p>
+					<a href="#" class="insurance_items__link">
+						Подробнее
+					</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="insurance_items">
+						<div class="insurance_items__image">
+							<img src="img/doc_3.png" alt="doc">						
+						</div>
+					<p class="insurance_items__text">
+						Дополнительный контроль качества<br>
+						нашими специалистами
+					</p>
+					<a href="#" class="insurance_items__link">
+						Подробнее
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bonus">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="bonus_article">
+						<h2 class="bonus_article__title">
+							У нас разработаны бонусные системы<br>
+							и скидки для наших клиентов	
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="bonus_item">
+						<div class="bonus_item__image">
+							10%
+						</div>
+						<p class="bonus_item__text">
+							Дополнительная скидка 10%<br>
+							на вторую запчасть<br>
+							и любые последующие
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="bonus_item">
+						<div class="bonus_item__image">
+							20%
+						</div>
+						<p class="bonus_item__text">
+							Скидка 20% при заключении<br>
+							договора на годовое<br>
+							сервисное обслуживание
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="bonus_item">
+						<div class="bonus_item__image">
+							<img src="img/truck_icon.png" alt="truck">
+						</div>
+						<p class="bonus_item__text">
+							Бесплатная доставка<br>
+							по всей России<br>
+							для всех клиентов
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<div class="bonus_item">
+						<div class="bonus_item__image">
+							<img src="img/telemarketer_icon.png" alt="telemarketer">
+						</div>
+						<p class="bonus_item__text">
+							Бесплатная круглосуточная<br>
+							техническая поддержка
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="questions">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="questions_article">
+						<h2 class="questions_article__title">
+							У Вас остались вопросы?
+						</h2>
+						<h3 class="questions_article__under_title">
+							На Ваши вопросы отвечает Эдуард
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-12">
+					<div class="q_part">
+							<div class="q_part__questions">
+								<span>1.</span>
+								<p>Как заказать деталь правильно?</p>
+							</div>
+								<ul class="q_part__answers">
+									<li>
+									Для того чтобы заказать деталь правильно,<br>
+									достаточно оставить заявку и мы вас<br>
+									бесплатно проконсультируем по всем<br>
+									вопросам , которые у вас возникнут.
+									</li>
+						    	</ul>
+							<div class="q_part__questions">
+								<span>2.</span>
+								<p>Что делать , если запчасть не понадобилась?</p>
+							</div>
+								<ul class="q_part__answers">
+									<li>
+									Если Вы вдруг приобрели запчасть ,<br>
+                                	которая в итоге вам не понадобилась,<br>
+                                	Вы можете вернуть нам обратно и <br>
+                                	получить всю сумму за запчасть.
+									</li>												
+								</ul>			
+							<div class="q_part__questions">
+								<span>3.</span>
+								<p>В чем преимущества оригинальных деталей?</p>
+							</div>
+								<ul class="q_part__answers">
+									<li>
+									В том , что Вы не будете волноваться<br>
+									за гарантию и пригодность детали.
+									</li>								
+								</ul>
+				        <a href="#" class="q_part__last_question">
+				            	<i class="fas fa-sync-alt"></i>
+				            	Ещё вопросы?
+				        </a>									
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-12">
+					<div class="q_ava">
+						<img src="img/Foto_na_sayt.webp" alt="office_photo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="advantages">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-12">
+    				<div class="advantages_article">
+    					<h2 class="advantages_article__title">
+    						С нами удобно работать!
+						</h2>
+						<p class="advantages_article__under_title">
+							Более 70% клиентов приходят к нам по рекомендации!
+						</p>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="advantages_item">
+    					<div class="advantages_item__image">
+    						<img src="img/Слой_9.webp" alt="adv">
+    					</div>
+    					<p class="advantages_item__text">
+    						Вы вносите предоплату<br>
+							в размере 50%<br>
+							от стоимости запчасти
+						</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="advantages_item">
+    					<div class="advantages_item__image">
+    						<img src="img/Слой_10.webp" alt="adv">
+    					</div>
+    					<p class="advantages_item__text">
+    						Отправляем запчасти<br>
+							в день заказа
+    					</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="advantages_item">
+    					<div class="advantages_item__image">
+    						<img src="img/Слой_11.webp" alt="adv">
+    					</div>
+    					<p class="advantages_item__text">
+    						Получаете деталь,<br>
+							проверяете, оплачиваете<br>
+							оставшиеся 50%
+    					</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="storage">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-12">
+    				<div class="storage_article">
+    					<h2 class="storage_article__title">
+    						У нас собственный склад!
+    					</h2>
+    					<p class="storage_article__under_title">
+    						Это позволяет нам быстро обрабатывать запросы и отгружать детали<br>
+    						в день заказа!
+						</p>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+    				<div class="storage_item">
+    					<div class="storage_item__image">
+    						<img src="img/a_1.png" alt="adv">
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+    				<div class="storage_item">
+    					<div class="storage_item__image">
+    						<img src="img/adv.jpg" alt="adv">
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    				<div class="storage_item">
+    					<div class="storage_item__image">
+    						<img src="img/a_2.png" alt="adv">
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="brigade">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-12">
+    				<div class="brigade_article">
+    					<h2 class="brigade_article__text">
+    						У нас в штате есть мобильные бригады,<br>
+    						готовые выехать на сервисное обслуживание,<br>
+    						ремонт и проведение диагностики!
+    					</h2>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-lg-4 col-md-4 col-sm-12">
+    				<div class="brigade_item">
+    					<div class="brigade_item__image">
+    						<img src="img/delivery_(1).webp" alt="delivery">
+    					</div>
+    					<p class="brigade_item__text">
+    						Организуем выезд специалистов<br>
+    						в течение двух дней
+    					</p>
+    				</div>
+    			</div>
+    			<div class="col-lg-4 col-md-4 col-sm-12">
+    				<div class="brigade_item">
+    					<div class="brigade_item__image">
+    						<img src="img/toolbox.webp" alt="toolbox">
+    					</div>
+    					<p class="brigade_item__text">
+    						Бригады укомплектованы<br>
+    						всем необходимым оборудованием<br>
+    						для производства работ<br>
+    						любой сложности
+    					</p>
+    				</div>
+    			</div>
+    			<div class="col-lg-4 col-md-4 col-sm-12">
+    				<div class="brigade_item">
+    					<div class="brigade_item__image">
+    						<img src="img/certificate_(1).webp" alt="certificate">
+    					</div>
+    					<p class="brigade_item__text">
+    						Все специалисты проходят обучение<br>
+    						и ежегодную аттестацию
+    					</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+   <section class="consultation">
+   	<div class="container">
+   		<div class="row">
+   			<div class="col-12">
+   				<div class="consultation_article">
+   					<p class="consultation_article__title">
+   						Если Вам необходима бесплатная консультация по вопросу обслуживания
+   					</p>
+   					<h6 class="consultation_article__under_title">
+   						Звоните нам по телефону:
+   					</h6>
+   					<span class="consultation_article__phone_number">
+   						 +7 (818) 247-47-25
+   					</span>
+   				</div>
+   			</div>
+   		</div>
+   		<div class="row">
+   			<div class="col-12 col-md-6 col-lg-6 col-sm-12 ol-xs-12">
+   				<div class="consultation_form cc">
+   					<input type="text" placeholder="Введите ваш телефон">
+   				</div>
+   			</div>
+   			<div class="col-12 col-md-6 col-lg-6 col-sm-12 col-xs-12">
+   				<div class="consultation_form bb">
+  					<button type="submit">Перезвонить сейчас</button>   					
+   				</div>
+   			</div>
+   		</div>
+   	</div>
+   </section>
+  <section class="address">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-12">
+  				<div class="address_info">
+  					<h3 class="address_info__title">
+  						Приезжайте в наш офис!
+  					</h3>
+  					<p class="address_info__text">
+  						г. Архангельск, Москва-Сити, оф. 3725
+  					</p>
+  					<span class="address_info__phone_number">
+  						+7 (818) 247-47-25
+  					</span>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d8b2d4bca63373d5015fb409ae7b800f543c9f7a9affc5002bb3a1e4592bc82&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  <footer id="footer_page">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+  				<div class="footer_logo">
+  					<img src="img/лого.webp" alt="footer_logo">
+  				</div>
+  			</div>
+  			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+  				<div class="footer_title">
+  				   Eddie's-car 
+  				</div>
+  			</div>
+  			<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+  				<div class="footer_contacts">
+  					<p class="footer_contacts__text">
+  						Есть вопросы? Звоните!
+  				    </p>
+  					<span class="footer_contacts__phone_number">
+  						+7 (818) 247-47-25	
+  					</span>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
